@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.5 on darwin)" generated="20211120 17:52:35.069" rpa="false" schemaversion="2">
+<suite id="s1" name="Alert" source="/Users/vasanth/PycharmProjects/Robot/Tests/Google/FunctionalTests/Alert.robot">
+<test id="s1-t1" name="Testing alerts">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=/Users/vasanth/Downloads/chromedriverr</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20211120 17:52:35.216" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20211120 17:52:35.215" endtime="20211120 17:52:37.241"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211120 17:52:37.242" level="INFO">Opening url 'http://demo.guru99.com/test/delete_customer.php'</msg>
+<status status="PASS" starttime="20211120 17:52:37.241" endtime="20211120 17:52:38.856"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>cusid</arg>
+<arg>123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211120 17:52:38.857" level="INFO">Typing text '123' into text field 'cusid'.</msg>
+<status status="PASS" starttime="20211120 17:52:38.856" endtime="20211120 17:52:39.026"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name:submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211120 17:52:39.027" level="INFO">Clicking element 'name:submit'.</msg>
+<status status="PASS" starttime="20211120 17:52:39.026" endtime="20211120 17:52:39.116"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>dismiss</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20211120 17:52:39.117" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20211120 17:52:39.117" endtime="20211120 17:52:39.134"/>
+</kw>
+<status status="PASS" starttime="20211120 17:52:35.215" endtime="20211120 17:52:39.135"/>
+</test>
+<doc>This is a test to handle alerts</doc>
+<status status="PASS" starttime="20211120 17:52:35.071" endtime="20211120 17:52:39.136"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Alert">Alert</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
