@@ -18,7 +18,7 @@ Forloop2
 
 Forloop3
 
-    ${itemlist}   create list  1 2 3 4 5 6
+    ${itemlist}   create list  1 2 3 4 5 6 7
         FOR  ${i}  IN  ${itemlist}
             log to console  ${i}
         END
